@@ -1,0 +1,135 @@
+
+#navbar
+{
+	@extend .navbar;
+	@extend .navbar-default;
+	@extend .navbar-fixed-top;
+
+	background-color: transparent;
+	border-bottom: 0px;
+}
+
+#navbar-content-container
+{
+	background-color: $white;
+	border-bottom: 1px solid $navbar-default-border;
+}
+
+#navbar-content
+{
+	@extend %column-10;
+
+	line-height: 50px;
+}
+
+#navbar-header
+{
+	@extend .navbar-header;
+}
+
+#navbar-brand
+{
+	@extend .navbar-brand;
+
+	top: 0px;
+	position: absolute;
+	padding: 0px;
+	z-index: 1;
+}
+
+#navbar-logo
+{
+	padding-left: 65px;
+}
+
+#navbar-toggle
+{
+	@extend .navbar-toggle;
+	
+	z-index: 2;
+}
+
+#navbar-collapse
+{
+	@extend .navbar-collapse;
+}
+
+#nav
+{
+	@extend .nav;
+	@extend .navbar-nav;
+	@extend .navbar-right;
+
+	li
+	{
+		@include background-color-transition;
+
+		font-size: 16px;
+	
+		&:hover
+		{
+			background-color: $light-grey;
+		}
+
+		a
+		{
+			display: inline-block;
+		}
+	}
+}
+
+#languages
+{
+	padding-right: 15px;
+	padding-left: 15px;
+
+	a
+	{
+		padding: 0px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	#navbar-brand
+	{
+		right: 0px;
+		left: 0px;
+		text-align: center;
+	}
+
+	#navbar-content
+	{
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	#navbar-toggle
+	{
+		margin-right: 0px;
+	}
+
+	#navbar-collapse
+	{
+		padding-top: 10px;
+	}
+
+	#nav
+	{
+		li
+		{
+			border-bottom: 1px solid $light-grey; 			
+			
+			&:last-child
+			{
+				border-bottom: 0px;
+			}
+
+			a
+			{
+				line-height: 50px;
+			}
+		}
+	}
+
+}

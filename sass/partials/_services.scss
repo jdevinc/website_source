@@ -1,0 +1,74 @@
+
+#services-content
+{
+	@extend .text-center;
+
+	h1
+	{
+		font-size: 56px;
+	}
+}
+
+.service-separator
+{
+	@include inner-border;	
+
+	height: 150px;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.service
+{
+	overflow: hidden;
+
+	h1
+	{
+		margin-top: 70px;
+		margin-bottom: 40px;
+	}
+
+	p
+	{
+		@extend %column-8;
+	}
+}
+
+.action
+{
+	@extend %column-8;
+	
+	background-image: url("../images/separator.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 100%;
+	margin-top: 35px;
+	margin-bottom: 80px;
+	line-height: 77px;
+
+	a
+	{
+		display: inline-block;
+		background-color: #fff;
+		padding: 0px 50px;
+
+		img
+		{
+			&:hover
+			{
+				opacity: .8;
+			}
+		}
+	}
+}
+
+#service-separator-2
+{
+	background-image: url("../images/separator-yellow.png");
+}
+
+#service-separator-3
+{
+	background-color: $red;
+	background-image: url("../images/separator-red.png");
+}

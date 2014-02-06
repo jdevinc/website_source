@@ -1,0 +1,25 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "globals": {
+    "$": true,
+    "tmpl": true,
+    "skrollr": true,
+    "enquire": true,
+    "$window": true,
+    "duration": true,
+    "regex": true,
+    "domain": true,
+    "lang": true,
+    "Desktop": true,
+    "Mobile": true,
+    "Slides": true,
+    "Blog": true,
+    "EasterEgg": true
+  },
+  "node": true,
+  "browser": true,
+  "devel": true
+}

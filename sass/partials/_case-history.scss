@@ -1,0 +1,75 @@
+
+#case-history-header
+{
+	@extend .text-center;
+	@include inner-border;	
+
+	overflow: hidden;
+	background-color: $red;
+
+	h1
+	{
+		@extend %column-10;
+		
+		margin-top: 70px;
+		margin-bottom: 90px;
+	}
+}
+
+#case-history-list 
+{
+	padding-left: 0px;
+
+	> li
+	{
+		overflow: hidden;
+		padding: 60px 0px;
+		border-top: 1px solid $light-grey;
+	
+		&:first-child
+		{
+			border-top: 0px;
+		}
+	}
+
+	article
+	{
+		@extend %column-10;
+
+		h2
+		{
+			@extend .col-sm-4;
+
+			font-size: 24px;
+			margin: 0px;
+
+			span
+			{
+				color: $red;
+				text-transform: uppercase;
+				margin-right: 4px;
+			}
+		}
+
+		.case-history-description
+		{
+			@extend .col-sm-7;
+			@extend .col-sm-offset-1;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	
+	#case-history-list 
+	{
+		article
+		{
+			h2
+			{
+				margin-bottom: 15px;
+			}
+		}
+	}
+	
+}

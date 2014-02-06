@@ -1,0 +1,31 @@
+---
+layout: default
+title: "Slides"
+services: "Services"
+call_to_action: "Do you have a project for us?"
+---
+<header id="slides-header">
+    <h1>
+        Slides Archive
+    </h1>
+</header>
+<div id="slides">
+    <img id="loader" src="/images/loader.gif" alt="">
+</div>
+<script id="slide_tmpl" type="text/template">
+    <article class="slide">
+        <span class="slide-date">
+            <%=date%>
+        </span>
+        <div class="slide-image">
+            <img src="<%=img%>" alt="" />
+        </div>
+        <header class="slide-content">
+            <h1>
+                <a href="<%=url%>">
+                    <%=title%>
+                </a>
+            </h1>
+        </header>
+    </article>
+</script>

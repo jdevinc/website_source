@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Blog"
+lang: "it"
+services: "Servizi"
+call_to_action: "Hai un progetto per noi?"
+---
+<header id="blog-header">
+    <h1>
+        Blog Archive
+    </h1>
+</header>
+<div id="posts">
+    <img id="loader" src="/images/loader.gif" alt="">
+</div>
+<script type="text/html" id="post_tmpl">
+    <article class="post">
+        <span class="post-date">
+            <%=date%>
+        </span>
+        <header class="post-content">
+            <h1>
+                <a href='<%=url%>'>
+                    <%=title%>
+                </a>
+            </h1>
+            <h2>
+                Posted by <%=author%>
+            </h2>
+        </header>
+    </article>
+</script>
