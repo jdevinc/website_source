@@ -8,3 +8,4 @@ To build it:
 ``` npm install
 ``` rake generate
 ``` grunt
+``` cp -r public/* ../codiceplastico.github.com
